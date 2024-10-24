@@ -6,9 +6,10 @@ def jogar_adivinhacao():
 
     print('Seja bem-vindo ao jogo da adivinhação!!')
     print('Tente adivinhar o número que estou pensando entre 1 e 100.')
+    palpite = int(input('Digite seu palpite: '))
 
     while True:
-        palpite = int(input('Digite seu palpite: '))
+        
         tentativas += 1
 
         if palpite < numero_adivinhar:
@@ -18,6 +19,8 @@ def jogar_adivinhacao():
         else:
             print(f'Boaaaaa, você acertou o número {numero_adivinhar} em {tentativas} tentativas')
             break
+
+        palpite = int(input('Digite um novo palpite: '))
         
 def main():
     while True:
